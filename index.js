@@ -13,11 +13,14 @@ connect()
 
 
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.render('index');
 });
 app.get('/shop', (req, res) => {
     res.render('shop');
+})
+app.get('/sproducts', (req, res) => {
+    res.render('sproducts');
 })
 app.listen(8080, () => {
     console.log('Example app listening on port 8080!');

@@ -1,0 +1,10 @@
+/* Media Query Home page start */
+@media (max-width:799px) {
+    #nabar{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+    }
+  }
+  /* Media Query Home page start */
