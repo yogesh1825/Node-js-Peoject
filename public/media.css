@@ -1,10 +1,166 @@
 /* Media Query Home page start */
 @media (max-width:799px) {
-    #nabar{
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: flex-start;
-    }
+   .section-p1 {
+      padding: 40px 40px;
+   }
+
+   #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: #E3E6F3;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px;
+      transition: all 0.5s ease-in-out;
+   }
+
+   #navbar.active {
+      right: 0px;
+   }
+
+   #navbar li {
+      margin-bottom: 25px;
+   }
+
+   #mobile {
+      display: flex;
+      align-items: center;
+   }
+
+   #mobile i {
+      color: #1a1a1a;
+      font-size: 24px;
+      padding-left: 20px;
+   }
+
+   #close {
+      display: initial;
+      position: absolute;
+      top: 30px;
+      right: 25px;
+      color: #222;
+      font-size: 24px;
+   }
+
+   #lg-bag {
+      display: none;
+   }
+
+   #hero {
+      height: 70vh;
+      padding: 0 80px;
+      background-position: top 30% right 30%;
+   }
+
+   #feture {
+      justify-content: center;
+   }
+
+   #feture .fe-box {
+      margin: 15px 15px;
+   }
+
+   #product1 .product-container {
+      justify-content: center;
+   }
+
+   #product1 .product {
+      margin: 15px;
+   }
+
+   #banner {
+      height: 20vh;
+   }
+
+   #sm-banner .banner-box {
+      min-width: 100%;
+      height: 40vh;
+   }
+
+   #banner3 {
+      padding: 0 40px;
+   }
+
+   #banner3 .banner-box {
+      width: 28%;
+   }
+
+   #news-letter .form {
+      width: 70%;
+   }
+}
+
+@media (max-width:477px) {
+   .section-p1 {
+      padding: 15px;
+   }
+
+   #header {
+      padding: 10px 30px;
+   }
+
+   h1 {
+      font-size: 38px;
+   }
+
+   h2 {
+      font-size: 32px;
+   }
+   #feture .fe-box h6 {
+      font-size: 9px;
   }
-  /* Media Query Home page start */
+   #hero {
+      padding: 0 20px;
+      background-position: 55%;
+   }
+
+   #feture .fe-box {
+      width: 140px;
+      margin: 0 0 15px 0;
+   }
+
+   #feture {
+      justify-content: space-between;
+   }
+
+   #product1 .product {
+      width: 100%;
+   }
+
+   #banner {
+      height: 40vh;
+   }
+
+   #sm-banner .banner-box {
+      height: 40vh;
+   }
+
+   #sm-banner .banner-box2 {
+      margin-top: 20px;
+   }
+
+   #banner3 {
+      padding: 0 20px;
+   }
+
+   #banner3 .banner-box {
+      width: 100%;
+   }
+   #newsletter {
+      padding: 40px 20px;
+   }
+   #newsletter .form{
+      width: 100%;
+   }
+   footer .copyright{
+      text-align: center;
+   }
+}
+
+/* Media Query Home page start */
