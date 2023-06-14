@@ -77,82 +77,119 @@ button.white {
 
 
 /* Login page start */
-.login-container {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 10%;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.login-body {
-  /* background-color: #e4e1e1; */
-  background-color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-.login-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 30px;
+.login-body
+{
+  /* opacity:0.9; */
+  background-image: url(https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9naW58ZW58MHx8MHx8&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.form-group {
-  margin-bottom: 20px;
+.login-container{
+  width: 900px;
+  height: 700px;
+  /*background-color: rgb(165, 195, 206);*/
+  margin: 30px auto;
+  padding: 49px;
+  border-radius: 15px;
 }
-
-.login-container label {
+.w-50{
+  width: 400px;
+  height: 600px;
+  background-color: rgb(194, 253, 255);
+  padding: 15px;
+  float: left;
+}
+.mainbox{
+  border-radius: 23px;
+  overflow: hidden;
+  box-shadow: 1px 1px 61px 7px #9d9e9d;
+}
+.mainbox h1{
+  text-align: center;
+}
+.mainbox input{
   display: block;
+  width: 70%;
+  margin: 10px auto;
+  padding: 9px 15px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 12px;
+  border: 2px solid;
+}
+.icon{
+  margin: 40px 5px;
+  height: 70px;
+  padding: 8px 0px;
+  font-size: 40px;
+  text-align: center;
+  
+}
+.fa-whatsapp{
+  color: green;
+}
+.fa-facebook{
+  color: rgb(12, 12, 180);
+}
+.fa-telegram{
+  color: rgb(112, 112, 212);
+}
+.fa-twitter{
+  color: rgb(5, 81, 110);
+}
+.mainbox h3{
+text-align: center;
+color: grey;
+font-size: 25px;  
+}
+.fa-envelope{
+  position: absolute;
+  top: 329px;
+  right: 922px;
+  font-size: 17px;
+}
+.fa-eye-slash{
+  position: absolute;
+  top: 375px;
+  right: 922px;
+  font-size: 17px;
+}
+.mainbox a{
+  display: block;
+  text-align: center;
+  color: black;
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #777;
+  padding: 0px 0px 0px 140px;
 }
-
-.form-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+.login-btn{
+  width: 30%;
+  display: block;
+  margin: 25px auto;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.5s;
+  background-color: rgb(206, 141, 141);
+  border-radius: 10px;
 }
-
-.login-btn {
-  width: 100%;
-  padding: 12px;
-  background-color: #ff6f61;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
+.login-btn:hover{
+  background-color: black;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
-
-.login-btn:hover {
-  background-color: #ff4c42;
-}
-
-.extra-options {
-  margin-top: 20px;
-}
-
-.extra-options a {
-  display: inline-block;
-  margin-right: 10px;
-  text-decoration: none;
-  color: #777;
-  font-size: 14px;
-}
-
-.extra-options a:hover {
-  color: #333;
+.login-img
+{
+  background-image: url(https://i.pinimg.com/736x/ec/fb/9f/ecfb9ffd184bceec03b3c19161eee7fd.jpg);
+  background-position: center;
+  background-size: cover;
+  
 }
 
 /* Login page end */
@@ -160,7 +197,7 @@ button.white {
 
 /* signup page start */
 .signup-body {
-  background-color: #f4f4f4;
+  background-color: #E3E6F3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +232,7 @@ button.white {
 }
 
 .form-group-2 input {
-  width: 95%;
+  width: 100%;
   padding: 10px;
   border-radius: 3px;
   border: 1px solid #ccc;
