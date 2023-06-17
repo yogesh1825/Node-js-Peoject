@@ -1,4 +1,5 @@
 const user = require("../models/userschema");
+const bcrypt = require('bcrypt');
 
 const home = (req, res) => {
     res.render('home');
@@ -7,15 +8,24 @@ const home = (req, res) => {
 const login = (req, res) => {
     res.render('login')
 }
-const signup =  (req, res) => {
-    // let data = await user.create(req.body)
-    // console.log("added successfully" + data.username)
+const loginauth = (req, res) => {
+    res.render('home')
+}
+const signup = (req, res) => {
     res.render('signup')
 }
 
 const signuppost = async (req, res) => {
-    let data = await user.create(req.body)
-    res.render('home')
+    bcrypt.hash(req.body.password, 10, async function (err, hash) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            req.body.password = hash
+            await user.create(req.body)
+            return res.render('home')
+        }
+    });
 }
 const shop = (req, res) => {
     res.render('shop');
@@ -32,4 +42,4 @@ const contact = (req, res) => {
 const about = (req, res) => {
     res.render('about')
 }
-module.exports = { home, login, signup, shop, sproducts, blog, contact, about , signuppost}
+module.exports = { home, login, signup, shop, sproducts, blog, contact, about, signuppost,loginauth }
